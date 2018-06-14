@@ -4,6 +4,18 @@ require 'data_mapper'
 
 DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/development.db")
 
+#70s disco legends Rose Royce have fallen on hard times
+#and have asked you to create a RESTFUL API in Sinatra
+#that allows cars to be booked into their carwash for them
+
+#The API should be able to
+
+# - Create an appointment
+# - Update the day of an appointment (Monday, Tuesday etc you don’t have to worry about time slots)
+# - Delete an appointment
+# - List all appointments
+# - View a specific appointment
+
 class Car
   include DataMapper::Resource
   property :id, Serial
